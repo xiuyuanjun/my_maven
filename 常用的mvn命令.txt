@@ -1,0 +1,4 @@
+将本地的jar包安装到本地环境。
+mvn install:install-file -Dfile=ojdbc14-10.2.0.4.0.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar
+
+mvn deploy:deploy-file -DgroupId=com.xx.xx -DartifactId=xx -Dversion=1.0.0 -Dpackaging=jar -Dclassifier=sources -Dfile=xx-sources.jar -Durl=仓库地址 -DrepositoryId=仓库名
